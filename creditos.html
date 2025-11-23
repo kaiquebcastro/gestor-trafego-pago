@@ -3,9 +3,10 @@
 <head>
     <title>Créditos - Gestor de Tráfego Pago</title>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/jpg" href="img/icone.png">
+    <link rel="icon" type="image/jpg" href="img/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
@@ -23,7 +24,15 @@
                     <li class="nav-item"><a class="nav-link" href="formacao.html">Formação</a></li>
                     <li class="nav-item"><a class="nav-link" href="certificacao.html">Certificação</a></li>
                     <li class="nav-item"><a class="nav-link" href="atuacao.html">Atuação</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="creditos.html">Créditos</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="creditos.html" id="creditosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Créditos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="creditosDropdown">
+                            <li><a class="dropdown-item" href="#bibliografia">Bibliografia</a></li>
+                            <li><a class="dropdown-item" href="#desenvolvedores">Desenvolvedores</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                 </ul>
             </div>
@@ -39,7 +48,8 @@
 
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <div class="custom-card">
+                    <!-- Seção Desenvolvedores -->
+                    <div id="desenvolvedores" class="custom-card mb-4">
                         <div class="card-body">
                             <h3 class="card-title">Desenvolvimento</h3>
                             <div class="row align-items-center">
@@ -47,24 +57,32 @@
                                     <h5>Desenvolvedor</h5>
                                     <ul class="list-unstyled">
                                         <li><strong>Nome:</strong> Kaique Bertazine Castro</li>
-										 <li><strong>Função:</strong> Desenvolvedor Front-end</li>
-										  <li><strong>Contato:</strong> kaique@gmail.com</li>
+                                        <li><strong>Função:</strong> Desenvolvedor Front-end</li>
+                                        <li><strong>Contato:</strong> kaique@gmail.com</li>
                                         <li><strong>Instituição:</strong> Etec Hortolândia</li>
-                                        
-                                       
-                                        
                                     </ul>
                                 </div>
-                              
                             </div>
                         </div>
                     </div>
 
-                    
-
-                 
-
-                    
+                    <!-- Seção Bibliografia -->
+                    <div id="bibliografia" class="custom-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Bibliografia</h3>
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h5>Links das pesquisas</h5>
+                                    <ul class="list-unstyled">
+                                        <li>https://br.jooble.org/salary/gestor-trafego-pago</li>
+                                        <li>https://danielbogo.com.br/blog/o-que-e-gestor-de-trafego-pago-descubra-agora/</li>
+                                        <li>https://querobolsa.com.br/carreiras-e-profissoes/gestor-de-trafego</li>
+                                        <li>https://livecontabilidade.com.br/os-3-maiores-gestores-de-trafego-do-brasil-e-o-que-podemos-aprender-com-eles/</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,7 +93,10 @@
            <p>Kaique Bertazine Castro 2025 © Todos os direitos reservados</p>
             <p class="mb-0">Trabalho acadêmico sem fins lucrativos</p>
         </div>
-        <div align="right"> <a href="#" class="back-to-top"> <img src="img/seta.png" height="30" width="40"></a>
+        <div align="right"> 
+            <a href="#" class="back-to-top"> 
+                <img src="img/seta.png" height="30" width="40" alt="Voltar ao topo">
+            </a>
         </div>
     </footer>
 
